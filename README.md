@@ -1,0 +1,3 @@
+## Project Info ##
+
+This project is a website built with Python, HTML, CSS, & JS. This project uses flask for developing the backend of the website. Flask is a micro web framework written in Python. Flask is used to build the backend of a website. An alternative to Flask is node.js which uses node.js to build teh backend of any website. Flask is used with Python as the backend to be integrated with the frontend with HTML, CSS, & JS.
