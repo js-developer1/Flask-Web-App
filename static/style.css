@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700');
+
+:root {
+    --background-color: #04001a;
+    --redCrayola: #EE4266;
+    --lightSeaGreen: #00A9A5;
+    --brandeisBlue: #256EFF;
+    --sunglow: #FFCB47;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {    
+    background: linear-gradient(180deg, #ee4266, #ee4266, #ee4266, #ee4266, #ee4266, #ee4266, transparent);
+    width: 100%;
+    padding: 20px 0px 35px 0px;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    grid-template-rows: 100%;
+    grid-template-columns: 10% 75% 15%;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    grid-row: 1;
+    grid-column: 3;
+    text-align: center;
+}
+
+nav ul a {
+    color: var(--background-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: aliceblue;
+}
+
+
+nav img {
+    margin: 0px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.fact {
+    background-color: var(--lightSeaGreen);
+    color: var(--background-color);
+    margin: 15px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.fact.special, .fact.special a {
+    background-color: var(--brandeisBlue);
+    color: aliceblue;
+}
+
+.fact h2 {
+    text-align: center;
+}
+
+#sources {
+    background-color: var(--sunglow);
+    padding: 15px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--background-color);
+    margin: 20px auto;
+}
+
+#factsContainer {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: 45% 45%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about {
+    background-color: var(--lightSeaGreen);
+    color: var(--background-color);
+    margin: 15px;
+    border-radius: 25px;
+    padding: 15px;
+}

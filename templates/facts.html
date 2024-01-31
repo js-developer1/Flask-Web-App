@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia.com</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='observe.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}" defer></script>
+    
+</head>
+<body>
+    <nav>
+        <img src="{{ url_for('static', filename='logo.png') }}" width="70px">
+        <ul>
+            <li><a style="margin-right: 20px;" href="./">Home</a><a style="margin-left: 20px;" href="./facts">Facts</a></li>
+        </ul>
+    </nav>
+    <h1 class="hidden up" style="color: aliceblue;">Trivia.com</h1>
+    <main id="factsContainer">
+        <div class="fact hidden left" style="transition-delay: 0ms;">
+            <h2>1. A cloud weighs around a million tonnes.</h2>
+            <p>
+                A cloud typically has a volume of around 1km<sup>3</sup> and a density of around 1.003kg per m<sup>3</sup> - that's a density that's around 0.4% lower than the air surrounding it (<a href="https://www.sciencefocus.com/planet-earth/how-much-does-a-cloud-weigh">this is how they are able to float</a>).
+            </p>
+        </div>
+        <div class="fact special hidden right" style="transition-delay: 0ms;">
+            <h2>2. Giraffes are 30 times more likely to get hit by lightning than people.</h2>
+            <p>
+                True, there are only five well-documented fatal lightning strikes on giraffes between 1996 and 2010. 
+                But due to the population of the species being just 140,000 during this time, it makes for <a href="https://www.sciencefocus.com/nature/giraffes-lightning/">about 0.003 lightning deaths per thousand giraffes</a> each year. 
+                This is 30 times the equivalent fatality rate for humans.
+            </p>
+        </div>
+        <div class="fact hidden left" style="transition-delay: 100ms;">
+            <h2>3. Your brain is constantly eating itself.</h2>
+            <p>
+                <a href="https://www.sciencefocus.com/the-human-body/does-the-brain-eat-itself/">This process is called phagocytosis</a>, where cells envelop and consume smaller cells or molecules to remove them from the system. 
+                Don't worry! Phagocytosis isn't harmful, but actually helps preserve your grey matter.
+            </p>
+        </div>
+        <div class="fact special hidden right" style="transition-delay: 100ms;">
+            <h2>4. Animals can experience time differently from humans.</h2>
+            <p>
+                To smaller animals, the world around them <a href="https://www.sciencefocus.com/science/animal-time-perception/">moves more slowly</a> compared to humans. 
+                Salamanders and lizards, for example, experience time more slowly than cats and dogs. 
+                This is because the perception of time depends on how quickly the brain can process incoming information.
+            </p>
+        </div>
+        <div class="fact hidden left" style="transition-delay: 200ms;">
+            <h2>5. All the world's bacteria stacked on top of each other would stretch for 10 billion light-years.</h2>
+            <p>Together, <a href="https://www.sciencefocus.com/science/how-tall-would-all-the-worlds-germs-and-bacteria-be-when-stacked-on-top-of-each-other">Earth's 0.001mm-long microbes</a> could wrap around the Milky Way over 20,000 times.</p>
+        </div>
+        <div class="fact special hidden right" style="transition-delay: 200ms;">
+            <h2>6. The world's oldest dog lived to 29.5 years old.</h2>
+            <p>While the median age a dog reaches tends to be <a href="https://www.sciencefocus.com/nature/whats-the-longest-a-dog-can-live-for/">about 10-15 years</a>, one Australian cattle dog, 'Bluey', survived to the ripe old age of 29.5.</p>
+        </div>
+    </main>
+    <div id="sources" class="hidden down" style="transition-delay: 300ms;">
+        <a href="https://www.sciencefocus.com/science/fun-facts">Source
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"></a>
+    </div>
+</body>
+</html>
